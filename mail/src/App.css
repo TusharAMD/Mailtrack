@@ -1,0 +1,338 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.Navibar ul {
+    
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0,0,0,0.0);
+}
+
+.Navibar ul li {
+  float: left;
+  
+}
+.Navibar ul li a div{
+  vertical-align:middle;
+  padding:10px;
+}
+
+.Navibar ul li a {
+  display:flex;
+  vertical-align:middle;
+  justify-content:space-between;
+  gap:10px;
+  color: rgb(42, 47, 57);
+  font-family: 'Source Sans Pro', sans-serif;
+  
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.Navibar ul li a:hover:not(.active) {
+  background-color: rgb(0,0,0,0.0);
+}
+
+#logo{
+    font-size:2em;
+}
+
+#login{
+    background-color:#FFFF;
+    border-radius:3px;
+    padding: 10px 20px 10px 20px;
+    border:1px solid rgb(42, 47, 57,0.5);
+    color:rgb(0, 170, 158);
+    cursor:pointer
+}
+#howtouse{
+    background-color:rgb(0, 170, 158);
+    padding: 10px;
+    color:white;
+    border-radius:3px;
+    cursor:pointer
+}
+#howtouse i{
+    vertical-align:middle;
+}
+
+.Home{
+    display:flex;
+    flex-wrap:wrap;
+    height:80vh;
+    align-items:center;    
+}
+.homecontent{
+    text-align:left;
+    color:rgb(35, 46, 58);
+    font-family: 'Roboto', sans-serif;
+    font-size:1.2em;
+    line-height: 1.6;
+    justify-content:flex-start; 
+    flex:50%;
+    flex-direction:row;
+}
+.homecontent h1 {
+    padding-left:50px;
+    
+}
+.homecontent p {
+    padding-left:50px;    
+}
+.homecontent h1 span{
+    font-size:1.2em;
+    color:rgb(254, 202, 38);
+}
+
+
+.homeimages{
+    flex:50%;
+}
+.homeimages div img{
+    width:100%;
+    animation-name: homepageimage;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes homepageimage {
+  0%   {transform:translate(0px, 0px);}
+  25%  {transform:translate(0px, -7px);}
+  50%  {transform:translate(0px, -10px);}
+  75%  {transform:translate(0px, -7px);}
+  100% {transform:translate(0px, 0px);}
+}
+.circle{
+    
+    z-index:-1;
+    position:fixed;
+    bottom:-15vw;
+    right:-25vw;
+    width:65vw;
+    height:65vw;
+    background-color:rgb(21, 177, 165);
+    border-radius:100%;
+}
+.bottomline{
+    font-family: 'Roboto', sans-serif;
+    
+    bottom:0;
+}
+#gotodash{
+    margin-top:20px;
+    background-color:rgb(0, 170, 158);
+    padding: 10px;
+    color:white;
+    border-radius:3px;
+    width:fit-content;
+    cursor:pointer
+}
+#gotodash i{
+    vertical-align:middle;
+}
+#gotodash:hover{
+    background-color:rgb(0,160,148)
+}
+
+#gotodash a{
+    color:white;
+    text-decoration:none;
+}
+
+.dashboard{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+.dashboard h1{
+    width:100%;
+    padding:15px;
+    color: rgb(45, 45, 45);
+    border: 2px solid;
+    border-left:none;
+    border-right:none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.DashboardContents{
+ display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center; 
+}
+.Firstline{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+    gap:100px; 
+}
+
+.sendmail{
+    display:flex;
+    justify-content:flex-end;
+}
+.sendmail div{
+    font-size:1.2em;
+    margin-right:30px;
+    background-color:rgb(255, 104, 102);
+    padding:5px 10px 5px 10px;
+    color:white;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    border-radius:10px;
+}
+.sendmail div span{
+    vertical-align:middle;
+    padding-left:3px;
+}
+.sendmail div a{
+    text-decoration:none;
+    color:inherit
+}
+.sendmail div:hover{
+    background-color:rgb(235, 94, 92)
+}
+.SendEmailPage{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    vertical-align:middle;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.EmailForm{
+    padding:10px;
+    background-color:rgb(50,50,50,0.6);
+    width:40vw;
+    height:80vh;
+}
+.EmailForm form{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:30px;
+    padding-top:30px;
+}
+.EmailForm form input{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1.3em;
+    background-color:rgb(0,0,0,0.3);
+    border:none;
+    height:50px;
+    margin:0px 50px 0px 50px;
+    color:white;
+}
+.EmailForm form input:focus{
+    outline:none
+}
+
+.EmailForm form textarea{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:1.3em;
+    height:5em;
+    background-color:rgb(0,0,0,0.3);
+    border:none;
+    color:white;
+    margin:0px 50px 0px 50px;
+}
+.EmailForm form textarea:focus{
+    outline:none
+}
+.sendbutton {
+  cursor:pointer;
+  margin-top:30px;
+  margin-bottom:10px;
+  background-color: rgb(255, 145, 143);
+  border: 3px solid rgb(20, 177, 165);
+  border-radius:5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.EmailForm button span{
+    margin-left:5px;
+    vertical-align:middle;
+}
+.mails{
+
+    width:100%;
+}
+.mails table{
+    font-family: 'Source Sans Pro', sans-serif;
+    width:100%;
+    border:none;
+    color:white;
+}
+th{
+    background-color:rgb(42, 47, 57);
+}
+th, td {
+            text-align: left;
+        }
+tr {
+    height:50px;
+}
+tr:nth-child(even) {
+            background-color: rgb(255, 124, 123);
+        }
+tr:nth-child(odd) {
+            background-color: rgb(19, 176, 165);
+        }
