@@ -106,6 +106,7 @@
 .lettr {
   margin-left: 50px;
 }
+
 .lettr h1 {
   font-family: "Share Tech Mono", monospace;
   margin: 0;
@@ -113,6 +114,65 @@
   height: 2.5rem;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1094px) {
+  .lettr {
+    justify-content: center;
+    margin-right: 50px;
+  }
+  .lettr h1 {
+    font-size: 2rem !important;
+    height: 2rem !important;
+  }
+  .lettr .Super {
+    font-size: 3.5rem !important;
+    height: 5.5rem !important;
+  }
+  .circle {
+    width: 150vw !important;
+    bottom: -40vw !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .lettr {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .lettr h1 {
+    font-size: 1.4rem !important;
+    height: 1.4rem !important;
+  }
+  .lettr .Super {
+    font-size: 3rem !important;
+    height: 5rem !important;
+  }
+  .homecontent p {
+    font-size: 1rem;
+    padding-right: 30px;
+  }
+  .circle {
+    bottom: -8vw !important;
+    width: 153vw !important;
+  }
+}
+@media screen and (max-width: 616px) {
+  .Navibar ul li a {
+    font-size: 1rem;
+    padding: 12px;
+  }
+  #login {
+    font-size: 0.7rem;
+    padding: 6px 10px 6px 10px;
+  }
+  #howtouse {
+    font-size: 0.7rem;
+    padding: 3px 3px 1px 10px;
+  }
+  .homecontent p {
+    padding-right: 30px;
+  }
+}
+
 .lettr .Super {
   color: rgb(223, 189, 0);
   font-size: 4rem;
@@ -176,7 +236,6 @@
 }
 .bottomline {
   font-family: "Roboto", sans-serif;
-
   bottom: 0;
 }
 #gotodash {
