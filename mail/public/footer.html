@@ -2,73 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Footer Design</title>
+    <title>Animated Skill Bar</title>
     <!----CSS link----->
     <link rel="stylesheet" href="style.css"> 
-    <!---Fontaweosme CDN Link--->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
- <footer>
-  <div class="content">
-    <div class="top">
-      <div class="logo-details">
-        <i class="fab fa-slack"></i>
-        <span class="logo_name">mail tracker</span>
-      </div>
-      <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-      </div>
+<div class="container">
+  <h2>CSS Skills Bar UI Design</h2>
+  <div class="skills">
+    <span class="Name">unwanted</span>
+    <div class="percent">
+      <div class="progress" style="width: 95%"></div>
     </div>
-    <div class="link-boxes">
-      <ul class="box">
-        <li class="link_name">Company</li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Get started</a></li>
-      </ul>
-      <ul class="box">
-        <li class="link_name">Email Types</li>
-        <li><a href="#">Spam</a></li>
-        <li><a href="#">Hacked </a></li>
-        <li><a href="#">unwanted</a></li>
-        <li><a href="#">inboxes</a></li>
-      </ul>
-      <ul class="box">
-        <li class="link_name">Account</li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">My account</a></li>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">ID</a></li>
-      </ul>
-      <ul class="box">
-        <li class="link_name">options</li>
-        <li><a href="#">Subscribe</a></li>
-        <li><a href="#">exit website</a></li>
-        <li><a href="#">register</a></li>
-        <li><a href="#">logout</a></li>
-      </ul>
-      <ul class="box input-box">
-        <li class="link_name">Subscribe</li>
-        <li><input type="text" placeholder="Enter your email"></li>
-        <li><input type="button" value="Subscribe"></li>
-      </ul>
-    </div>
+    <span class="value">95%</span>
   </div>
-  <div class="bottom-details">
-    <div class="bottom_text">
-      <span class="copyright_text">Copyright © 2021 <a href="#">GSSOC</a>All rights reserved</span>
-      <span class="policy_terms">
-        <a href="#">Privacy policy</a>
-        <a href="#">Terms & condition</a>
-      </span>
+  <div class="skills">
+    <span class="Name">spam</span>
+    <div class="percent">
+      <div class="progress" style="width: 90%"></div>
     </div>
+    <span class="value">90%</span>
   </div>
-</footer>
+  <div class="skills">
+    <span class="Name">inbox</span>
+    <div class="percent">
+      <div class="progress" style="width: 72%"></div>
+    </div>
+    <span class="value">72%</span>
+  </div>
+  <div class="skills">
+    <span class="Name">email</span>
+    <div class="percent">
+      <div class="progress" style="width: 85%"></div>
+    </div>
+    <span class="value">85%</span>
+  </div>
+</div>
 </body>
 </html>
